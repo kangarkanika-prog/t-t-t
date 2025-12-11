@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>tic tac toe</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.4/dist/confetti.browser.min.js"></script>
 </head>
 <body>  
+    <img src="https://media.gettyimages.com/id/1398147440/video/alphabet-background-blue-and-black-color-animation-moving-on-screen.jpg?s=640x640&k=20&c=gIzOGKXvwHCE96LoaBR9y_kzX-vuHKGUpybqgSLYzdc=" alt="Tic Tac Toe Icon" class="icon">
     <div class="mesg-container hide">
         <p id="mesg"></p>
          
@@ -14,6 +16,10 @@
     <button  id="newbtn">New Game</button>
     <h1>Tic-Tac-Toe</h1>
     <div class="container">
+        <div class="player-score left-score">
+            <h3>Player 1</h3>
+            <div class="score-display">X: <span id="scoreX">0</span></div>
+        </div>
       
         <div class="game">
         <button class="box"></button>
@@ -23,9 +29,14 @@
         <button class="box"></button>
         <button class="box"></button>
         <button class="box"></button>
+       <button class="box"></button>
         <button class="box"></button>
-        <button class="box"></button>
-    </div>      
+        <div id="line"></div>
+    </div>
+    <div class="player-score right-score">
+        <h3>Player 2</h3>
+        <div class="score-display">O: <span id="scoreO">0</span></div>
+    </div>
     </div>
     <button id="resetbtn">Reset Game</button>
 <script src="script.js"></script>

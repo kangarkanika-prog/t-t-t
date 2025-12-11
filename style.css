@@ -3,15 +3,24 @@
     padding:0px;
 }
 body{
-    background-color: rgb(33, 83, 72);
+    
     text-align: center;
+}
+.icon{
+    position: fixed;
+    top:0%;
+    left:0%;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    object-fit:cover ;
 }
 .container{
     height:70vh;
- display: flex;
-  
-    justify-content: center;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
+    padding: 0 5vmin;
 }
 .game{
     height: 60vmin;
@@ -21,6 +30,7 @@ body{
     justify-content: center;
     align-items: center;
     gap: 1.5vmin;
+    margin: 0 auto;
 }
 .box{
    height: 18vmin;
@@ -44,6 +54,7 @@ button{
 }
 
 h1{
+    color: beige;
      font-size: 5vmin;
     font-weight: 200;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -53,4 +64,52 @@ h1{
      font-size: 5vmin;
     font-weight: 200;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+#line{
+    position :absolute;
+    background-color:red;
+    height:5px;
+    width:0px;
+top:0%;
+left:0%;
+transition: 0.3s;
+z-index: 10;
+}
+
+.player-score{
+    background-color: rgba(245, 245, 220, 0.95);
+    border-radius: 2rem;
+    padding: 3rem;
+    min-width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.player-score h3{
+    color: black;
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.score-display{
+    background-color: rgb(237, 241, 210);
+    padding: 2rem;
+    border-radius: 1rem;
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: black;
+}
+
+.score-display span{
+    color: #2196F3;
+    font-size: 4rem;
+}
+
+.left-score{
+    flex-shrink: 0;
+}
+
+.right-score{
+    flex-shrink: 0;
 }
